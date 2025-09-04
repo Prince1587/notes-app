@@ -8,7 +8,7 @@ Perfect for learning full-stack development, API integration, and deployment wor
 
 ## 🚀 Live Demo
 
-👉 **[Make notes Now!](https://notes-app-wp7d.vercel.app/)**---
+👉 **[Make notes Now!](https://notes-app-wp7d.vercel.app/)**
 
 ## 🛡️ Deployment Proof
 
@@ -43,3 +43,26 @@ notes-app-fastapi-react/
     ├── src/
     ├── package.json
     └── ...
+
+🔧 Deployment Instructions
+Backend (Render)
+
+Create a Web Service with Root Directory = backend.
+
+Build: pip install -r requirements.txt
+
+Start: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+
+Add environment variable ALLOWED_ORIGINS = your Vercel domain.
+
+(Optional) Persistent Disk: set DB_PATH for SQLite storage.
+
+Frontend (Vercel)
+
+Import the repo.
+
+Set Root Directory = frontend.
+
+Add environment variable: VITE_API_URL=<your-backend-url>
+
+Deploy.
