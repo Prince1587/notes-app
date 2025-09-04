@@ -1,4 +1,4 @@
-# 📝 Notes App — React (Vercel) + FastAPI (Render)
+# 📝 Notes App 
 
 A **minimal, production-ready full-stack Notes application** with **CRUD operations** and **shareable public links**.  
 Built with **React (Vite)** for the frontend and **FastAPI** for the backend.  
@@ -10,15 +10,11 @@ Perfect for learning full-stack development, API integration, and deployment wor
 
 👉 **[Make notes Now!](https://notes-app-wp7d.vercel.app/)**
 
-## 🛡️ Deployment Proof
+**Screenshot**
 
-The project is successfully deployed and publicly accessible.
+<img src="Screenshot 2025-09-04 144254.jpg">
 
-| Platform | URL | Status |
-|----------|-----|--------|
-| Vercel (Frontend) | [Link](https://<your-frontend-url>) | ✅ Online |
-| Render (Backend) | [Link](https://<your-backend-url>) | ✅ Online |
-
+---
 ---
 
 ## ✨ Features
@@ -44,25 +40,16 @@ notes-app-fastapi-react/
     ├── package.json
     └── ...
 
-🔧 Deployment Instructions
-Backend (Render)
+## 🔧 Deployment Instructions
 
-Create a Web Service with Root Directory = backend.
+### **Backend (Render)**
 
-Build: pip install -r requirements.txt
+1. Create a new Web Service from your GitHub repo with **Root Directory** = `backend`.  
+2. Set the **Build Command**:  
+   ```bash
+   pip install -r requirements.txt
+   uvicorn app.main:app --host 0.0.0.0 --port $PORT
+3. ALLOWED_ORIGINS=<your-vercel-domain>
+4. ALLOWED_ORIGINS=<your-vercel-domain>
 
-Start: uvicorn app.main:app --host 0.0.0.0 --port $PORT
 
-Add environment variable ALLOWED_ORIGINS = your Vercel domain.
-
-(Optional) Persistent Disk: set DB_PATH for SQLite storage.
-
-Frontend (Vercel)
-
-Import the repo.
-
-Set Root Directory = frontend.
-
-Add environment variable: VITE_API_URL=<your-backend-url>
-
-Deploy.
