@@ -8,8 +8,7 @@ Perfect for learning full-stack development, API integration, and deployment wor
 
 ## 🚀 Live Demo
 
-👉 **Frontend:** [https://notes-app-wp7d.vercel.app/]  
----
+👉 **[Make notes Now!](https://notes-app-wp7d.vercel.app/)**---
 
 ## 🛡️ Deployment Proof
 
